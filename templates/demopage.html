@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>demo page</title>
+        <style>
+           
+        </style>
+    </head>
+    <body>
+        <div class="body1">
+            <h2>This is timer starting in the html page</h2>
+            <script>
+           for( let i=1; i<=15;i++){
+            window.setTimeout(function() {
+            document.getElementById('answer'+i).style.display = "block";
+            document.getElementById('question'+i).style.display = "block";
+            document.getElementById('questions-navigation').style.display = "block";
+            
+            }, time = time+3000);
+            if (countdown==1){
+                countdown=0;
+                clearTimeout();
+            }
+            else{
+            window.setTimeout(function() {
+            document.getElementById('question'+i).style.display = "none";
+            document.getElementById('answer'+i).style.display = "none";
+            document.getElementById('questions-navigation').style.display = "none";
+            }, time=time+3000);
+            }
+            /*window.setTimeout(function() {
+             document.getElementById('answer'+i).style.display = "block"
+            }, time = time+1000);
+            
+            window.setTimeout(function() {
+            document.getElementById('answer'+i).style.display = "none"
+            }, time=time+1000);
+              */        
+            }
+            </script>
+        </div>
+    </body>
+</html>
+
+
+// for loop working code for displaying nd hiding the content
+
+let countdown=0;
+let displayint = window.setTimeout(displayfunc,time=time+2000,i);
+displayint;
+
+let s = 0;
+document.getElementById("result").innerHTML = "before the if block "+s;
+
+document.getElementById("questions-navigation").onclick = function() {  
+s=1;
+
+document.getElementById("result").innerHTML = "s value is "+s;
+
+
+console.log("Started...");
+var today = new Date();
+
+for(let i=0;i<=10;i++)
+{
+  val = today.getSeconds();
+  console.log(i+"th iteration value is "+val);
+  while(today.getSeconds()!=val+2){
+    console.log(today.getSeconds());
+  }
+}
+
+console.log("ended..");

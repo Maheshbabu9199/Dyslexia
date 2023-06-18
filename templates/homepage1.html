@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <title>Home Page</title>
+       
+    </head>
+    <body>
+        <div class="imagediv">
+            <img src="static/pexels-ksenia-chernaya-5752268.jpg" alt="First image not loaded" height="800px" width="100%">
+            <div class="div1-text">
+                <h1 style="position:absolute;top: 40px; left: 1200px ;font-weight:bold">Dyslexia</h1>
+                <h2 style="position:absolute; top: 110px; left: 40px; font-style: italic;">Dyslexia is a specific learning disability that is neurobiological in origin.<br>It is characterized by difficulties with accurate and/or fluent word recognition and by poor spelling and decoding abilities.</h2>
+                <h3 style="position:absolute; top: 650px; left: 40px;">Scroll down to see more</h3>
+            </div>
+        </div>
+        
+        <div class="imagediv">
+            <img src="static/pexels-julia-m-cameron-4145074.jpg" alt="Second image not loading" height="900px" width="100%">
+            <div class="div2-text">
+                <h1 style="position:absolute; top: 900px; left: 40px;color:white">Check out whether you have Dyslexia or not with our trained machine learning models</h1>
+                <a style="position:absolute; top:1000px; left: 1000px; color:black;" href= {{ url_for( "examtest", message = "from homepage") }}><h1>Click here<br>to take<br>EXAM</h1></a>
+            </div>  
+        </div>
+        <div class="imagediv">
+            <img src="../static/pexels-lukas-669622.jpg" alt="Third image not loading" height="600px" width="100%">
+            <h1 style="position:absolute; top: 1750px; left: 400px;color:white">Help us in completing the survey</h1>
+            <a style="position:absolute; top: 1750px; left: 1100px;color:white" href={{ url_for( "survey" ) }}><h1>Take me to<br>SURVEY</h1></a>
+            <!-- <a href= {{ url_for( "survey" ) }}>Help us to complete our survey</a> -->
+        </div>
+        
+    </body>
+</html>
