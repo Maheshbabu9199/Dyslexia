@@ -1,2 +1,2 @@
-# This is the documentation file for the Projects_01 file
+# This is the readme for the Dyslexia Project. Will be updated soon..
 
