@@ -1,4 +1,4 @@
-# This is the readme for the Dyslexia Project. Will be updated soon..
+# About this Project
 
 I'm excited to announce the launch of my new web application that utilizes machine learning to assist in dyslexia identification. This application aims to empower individuals by offering a **preliminary screening tool**.
 
